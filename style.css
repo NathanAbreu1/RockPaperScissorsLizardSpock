@@ -16,15 +16,14 @@ body {
 
 :root {
   --black: #2f2f37;
-  --white: rgb(193, 188, 188);
+  --gray: rgb(193, 188, 188);
 }
 
 .header {
-  position: absolute;
-  background-color: var(--white);
+  position: relative;
+  background-color: var(--gray);
   width: 100%;
   height: 100px;
-  z-index: 100000;
 }
 
 .content {
@@ -37,29 +36,42 @@ body {
   padding-top: 20px;
 }
 
+.score {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.score h3 {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  border-bottom: 5px #fff solid;
+  padding-top: 15px;
+}
+
 .banner {
-  position: absolute;
+  position: relative;
   background-color: var(--black);
   width: 100%;
   height: 100vh;
 }
 
-.banner {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+.container {
+  padding-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.container {
-  display: flex;
-  margin: 10px;
+  text-align: center;
 }
 
 .Bx {
   width: 350px;
-  height: 400px;
+  height: 300px;
   background-color: #fff;
   text-align: center;
   border-radius: 0.9rem;
@@ -72,10 +84,10 @@ body {
 }
 
 .Bx img {
-  padding-top: 100px;
+  padding-top: 50px;
   background-position: cover;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 0.5rem;
 }
 
@@ -83,11 +95,37 @@ body {
   font-size: 40px;
 }
 
+.Btns {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.btn {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+  margin: 0px 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
 .footer {
   position: absolute;
   width: 100%;
-  height: 200px;
-  background-color: var(--white);
+  height: 100px;
+  background-color: var(--gray);
+  padding-top: 10px;
 }
 
 .links {
@@ -95,17 +133,15 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .footer .links .imgBx {
   width: 100px;
-  margin: 0px 30px;
+  margin: 0px 5px;
 }
 .footer .links .imgBx img {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
 }
 
 .footer .links .imgBx img:hover {
@@ -114,6 +150,23 @@ body {
 }
 
 .footer h3 {
+  padding-top: 5px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.result {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.result h3 {
+  border-bottom: 02px solid #fff;
+  width: 300px;
+  color: #fff;
 }
