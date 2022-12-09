@@ -46,12 +46,34 @@ body {
   padding-top: 50px;
 }
 
+.banner .resultText {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+}
+
+.banner .resultText h3 {
+  position: relative;
+  font-size: 25px;
+  border-bottom: 3px solid #fff;
+  width: 500px;
+}
+
 .score h3 {
   position: relative;
-  width: 300px;
+  width: 50px;
   height: 50px;
   border-bottom: 5px #fff solid;
-  padding-top: 15px;
+}
+
+.score h3 span {
+  font-size: 40px;
+  color: #fff;
 }
 
 .banner {
@@ -77,6 +99,7 @@ body {
   border-radius: 0.9rem;
   cursor: pointer;
   margin: 10px;
+  z-index: 10000;
 }
 
 .Bx:hover {
@@ -169,4 +192,6 @@ body {
   border-bottom: 02px solid #fff;
   width: 300px;
   color: #fff;
+  margin: 10px;
+  font-size: 25px;
 }
